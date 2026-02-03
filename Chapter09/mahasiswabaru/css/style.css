@@ -1,0 +1,258 @@
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* ===== BODY ===== */
+body {
+    background-color: #ffffff; 
+    color: #070606;
+}
+ /* ===== HEADER ===== */
+header.header {
+    background: linear-gradient(90deg, #134d91, #0b111a);
+     display: flex;
+    align-items: center;
+    padding: 60px 30px;
+    
+}
+
+/* ===== HEADER LIST MABA ===== */
+.header-list {
+    background: linear-gradient(90deg, #002147, #0b5ed7);
+    padding: 30px;
+    text-align: center;
+    color: white;
+}
+
+.header-list h3 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/* ===== NAV ACTION (TAMBAH DATA) ===== */
+.nav-action {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.btn-tambah {
+    display: inline-block;
+    background: linear-gradient(135deg, #879dcc, #20c997);
+    color: white;
+    padding: 12px 22px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+}
+
+.btn-tambah:hover {
+    background: linear-gradient(135deg, #20c997, #198754);
+    transform: translateY(-2px);
+}
+
+
+header.header .judul {
+    color: #ffffff;
+    margin: 0 auto;     
+    text-align: center;  
+}
+
+header.header .judul h1 {
+    margin: 0;
+    font-size: 60px;
+}
+
+header.header .judul h2 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 500;
+    font-size: 40px;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+    background: #002147;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 15px 0;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.navbar ul li a {
+    display: inline-block;
+    padding: 12px 30px;
+    background: #ffcc00;
+    color: #002147;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    background: #ffd633;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.deskripsi {
+    font-size: 20px;
+    padding: 50px;
+    line-height: 2.5;
+    text-align: center;
+}
+
+.foto-ulbi {
+    width: 700px;          
+    float: left;           
+    margin: 0 20px 10px 0; 
+    border-radius: 15px;
+}
+
+
+/* ===== CONTAINER ===== */
+.container {
+    padding: 30px;
+}
+
+/* ===== ALERT ===== */
+.alert {
+    padding: 12px 18px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.alert-success {
+    background-color: #d1e7dd;
+    color: #0f5132;
+    border-left: 5px solid #198754;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    color: #842029;
+    border-left: 5px solid #dc3545;
+}
+
+/* ===== FORM ===== */
+form {
+    background: rgb(93, 143, 146);
+    padding: 30px;
+    max-width: 800px;
+    margin: 40px auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+form label {
+    font-weight: bold;
+    display: block;
+    margin-top: 15px;
+}
+
+/* ===== BUTTON SUBMIT ===== */
+button.btn-submit {
+    display: block;
+    margin: 25px auto 0;
+    background: linear-gradient(135deg, #002147, #0b5ed7);
+    color: #ffffff;
+    width: 220px;
+    padding: 14px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+}
+
+button.btn-submit:hover {
+    background: linear-gradient(135deg, #0b5ed7, #002147);
+    transform: translateY(-2px);
+}
+
+button.btn-submit:active {
+    transform: scale(0.96);
+}
+
+/* ===== TABLE ===== */
+table {
+    background: rgb(46, 104, 107);
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px auto;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* HEADER TABEL */
+th {
+    background-color: #002147; 
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f6ff;
+}
+
+tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+/* HOVER */
+tr:hover {
+    background-color: #dbe8ff;
+}
+
+input[type="text"],
+textarea,
+select {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0 15px;
+    border: 1px solid #7682b6;
+    border-radius: 8px;
+}
+
+input[type="text"]:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: #002147;
+    background-color: #eef3ff;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background-color: #3AA6B9;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    margin-top: 30px;
+}
+
